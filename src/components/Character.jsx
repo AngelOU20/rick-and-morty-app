@@ -24,49 +24,49 @@ export const Character = ({
   }, [episodeUrl]);
 
   return (
-    <div className="character-card">
-      <div className="inner-part">
-        <div className="card-image">
-          <img className="character-image" src={image} alt="" />
-        </div>
-        <div className="card-content">
-          <h2 className="card-title">{name}</h2>
-          <div className="card-description">
-            <p>{origin.name}</p>
-            <p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="12"
-                height="12"
-                viewBox="0 0 14 14"
-                fill="none"
-              >
-                <circle
-                  cx="7"
-                  cy="7"
-                  r="7"
-                  fill={
-                    status === "Alive"
-                      ? "#00FF38"
-                      : status === "Dead"
-                      ? "#d63d2e"
-                      : "#9e9e9e"
-                  }
-                />
-              </svg>{" "}
+    <div className="card">
+      <div className="card-image">
+        <img className="character-image" src={image} alt="" />
+        <span className="character-origin">{origin.name}</span>
+      </div>
+      <div className="card-content">
+        <h2 className="card-title">{name}</h2>
+        <div className="card-description">
+          <div className="character-status-species">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="10"
+              viewBox="0 0 14 14"
+              fill="none"
+            >
+              <circle
+                cx="7"
+                cy="7"
+                r="7"
+                fill={
+                  status === "Alive"
+                    ? "#55cc44"
+                    : status === "Dead"
+                    ? "#d63d2e"
+                    : "#9e9e9e"
+                }
+              />
+            </svg>{" "}
+            <span>
               {status} - {species}
-            </p>
-            <p>
-              Last known location:
-              <br />
-              {location.name}
-            </p>
-            <p>
-              First seen in::
-              <br />
-              {episodeName}
-            </p>
+            </span>
           </div>
+          <p className="character-location">
+            <span className="location-label">Last known location:</span>
+            <br />
+            <span>{location.name}</span>
+          </p>
+          <p className="character-episode">
+            <span className="episode-label">First seen in:</span>
+            <br />
+            <span>{episodeName}</span>
+          </p>
         </div>
       </div>
     </div>
