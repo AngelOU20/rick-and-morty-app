@@ -1,0 +1,253 @@
+/* Character */
+.character-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  place-items: center;
+}
+
+/* Card */
+.card {
+  display: flex;
+  background-color: #3c3e44;
+  width: 500px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.card-image {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  width: 200px;
+  margin-right: 24px;
+}
+
+.character-image {
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.character-origin {
+  text-align: center;
+  font-size: 0.76em;
+  font-weight: 600;
+}
+
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-title {
+  font-size: 2em;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.card-title:hover {
+  color: #ff9800;
+}
+
+.character-status-species span {
+  text-transform: capitalize;
+}
+
+.card-description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.character-location,
+.character-episode {
+  margin: 0;
+}
+
+.character-location span,
+.character-episode span {
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+.location-label,
+.episode-label {
+  color: #9e9e9e;
+  font-size: 1em !important;
+  font-weight: 400 !important;
+}
+
+/* Botones */
+.btn-page {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  color: #333;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.2s ease; /* Transición suave en el cambio de color */
+}
+
+.btn-page:hover {
+  background-color: #ff9800;
+  color: #fffdfd;
+}
+
+/* Estilo para botones deshabilitados */
+.btn-page:disabled {
+  border: 1px solid #3d3c3c;
+  background-color: #27292e;
+  color: #ffffff4d;
+  cursor: not-allowed; /* Cambia el cursor a "no permitido" */
+}
+
+/* Estilo del número de página */
+.number-page {
+  font-size: 1.8em;
+  font-weight: 800;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  padding: 10px 25px;
+}
+
+/* Escritorio grande */
+@media (min-width: 992px) and (max-width: 1699px) {
+  h1 {
+    font-size: 3.8em;
+  }
+
+  p,
+  span {
+    font-size: 1em;
+  }
+
+  /* Character */
+
+  .character-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  /* Card */
+
+  .card {
+    width: 440px;
+    padding: 10px;
+  }
+
+  .card-image {
+    width: 200px;
+  }
+
+  .character-image {
+    width: 180px;
+  }
+
+  .card-title {
+    font-size: 1.6em;
+  }
+}
+
+/* Escritorio pequeño / tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  h1 {
+    font-size: 3.7em;
+  }
+
+  p,
+  span {
+    font-size: 0.9em;
+  }
+
+  /* Character */
+
+  .character-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  /* Card */
+
+  .card {
+    width: 340px;
+    padding: 10px;
+  }
+
+  .card-image {
+    width: 140px;
+  }
+
+  .character-image {
+    width: 120px;
+  }
+
+  .card-title {
+    font-size: 1.6em;
+  }
+}
+
+/* Teléfonos */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 3.2em;
+  }
+
+  p,
+  span {
+    font-size: 0.8em;
+  }
+
+  /* Character */
+
+  .character-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+
+  /* Card */
+
+  .card {
+    width: 320px;
+    padding: 10px;
+  }
+
+  .card-image {
+    width: 120px;
+  }
+
+  .character-image {
+    width: 100px;
+  }
+
+  .card-title {
+    font-size: 0.8em;
+  }
+
+  .card-title {
+    font-size: 1.2em;
+  }
+
+  /* Botones */
+  .btn-page {
+    padding: 10px 20px;
+    font-size: 0.8em;
+  }
+
+  /* Estilo del número de página */
+  .number-page {
+    font-size: 1.4em;
+    padding: 10px 20px;
+  }
+}

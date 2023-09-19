@@ -1,3 +1,2 @@
-export * from "./Character";
-export * from "./CharacterList";
+export * from "./character";
 export * from "./NavePage";
