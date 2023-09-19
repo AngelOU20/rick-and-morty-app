@@ -1,5 +1,5 @@
 import logoRickAndMorty from "./assets/images/rick-and-morty-logo.webp";
-import { CharacterPage } from "./pages/character/CharacterPage";
+import { AppRouter } from "./router/AppRouter";
 
 export const App = () => {
   return (
@@ -8,7 +8,7 @@ export const App = () => {
 
       <h1 className="title">Rick and Morty characters</h1>
 
-      <CharacterPage />
+      <AppRouter />
     </div>
   );
 };
