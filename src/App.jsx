@@ -6,7 +6,7 @@ export const App = () => {
     <div className="container">
       <img src={logoRickAndMorty} className="logo" alt="" />
 
-      <h1>Rick and Morty characters</h1>
+      <h1 className="title">Rick and Morty characters</h1>
 
       <CharacterPage />
     </div>

@@ -38,6 +38,7 @@
   text-align: center;
   font-size: 0.76em;
   font-weight: 600;
+  text-transform: capitalize;
 }
 
 .card-content {
@@ -124,15 +125,6 @@
 
 /* Escritorio grande */
 @media (min-width: 992px) and (max-width: 1699px) {
-  h1 {
-    font-size: 3.8em;
-  }
-
-  p,
-  span {
-    font-size: 1em;
-  }
-
   /* Character */
 
   .character-container {
@@ -162,15 +154,6 @@
 
 /* Escritorio pequeño / tablet */
 @media (min-width: 768px) and (max-width: 991px) {
-  h1 {
-    font-size: 3.7em;
-  }
-
-  p,
-  span {
-    font-size: 0.9em;
-  }
-
   /* Character */
 
   .character-container {
@@ -200,15 +183,6 @@
 
 /* Teléfonos */
 @media (max-width: 767px) {
-  h1 {
-    font-size: 3.2em;
-  }
-
-  p,
-  span {
-    font-size: 0.8em;
-  }
-
   /* Character */
 
   .character-container {

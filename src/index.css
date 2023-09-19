@@ -20,7 +20,7 @@
   margin: auto;
 }
 
-h1 {
+.title {
   font-size: 5.2em;
   font-weight: 900;
   line-height: 1.1;
@@ -52,4 +52,37 @@ h1 {
   justify-content: space-around;
   align-items: center;
   margin: 50px 0;
+}
+
+@media (min-width: 992px) and (max-width: 1699px) {
+  .title {
+    font-size: 3.8em;
+  }
+
+  p,
+  span {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .title {
+    font-size: 3.7em;
+  }
+
+  p,
+  span {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 3.2em;
+  }
+
+  p,
+  span {
+    font-size: 0.8em;
+  }
 }
