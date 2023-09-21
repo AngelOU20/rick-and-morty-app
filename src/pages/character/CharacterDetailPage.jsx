@@ -41,7 +41,7 @@ export const CharacterDetailPage = () => {
             <p>Gender: {gender}</p>
             <p>Species: {species}</p>
             <p>Location: {location?.name}</p>
-            <p>Origin: {origin?.name}</p>
+            <p className={`origin-${origin?.name}`}>Origin: {origin?.name}</p>
           </div>
         </div>
       </div>
