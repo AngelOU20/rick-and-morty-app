@@ -1,0 +1,138 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.card-detail {
+  background-color: #3c3e44;
+  width: 400px;
+  height: 600px;
+
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0em 0em 1.5em rgba(0, 0, 0, 0.5);
+
+  position: relative;
+}
+
+.card-detail__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 300px;
+  position: relative;
+}
+
+.arrow__back {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+
+  cursor: pointer;
+  padding: 0.5em;
+  border-radius: 50%;
+  background-color: #3c3e44;
+
+  transition: 0.5s;
+}
+
+.arrow__back:hover {
+  background-color: #505052;
+}
+
+.card-detail__image img {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+
+  padding: 1em;
+  background-color: #c4c4c40c;
+}
+
+.card-detail__status {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+
+  display: flex;
+  justify-content: center;
+  width: 80px;
+
+  border-radius: 0.8em;
+  padding: 0.2em 0em;
+
+  cursor: pointer;
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.5);
+}
+
+.status {
+  text-transform: capitalize;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+.Alive {
+  background-color: #55cc44;
+}
+
+.Dead {
+  background-color: #d63d2e;
+}
+
+.unknown {
+  background-color: #9e9e9e;
+}
+
+.card-detail__name {
+  text-align: center;
+  font-size: 2.4em;
+
+  margin-bottom: 20px;
+}
+
+.card-detail__content p {
+  margin: 0;
+  padding: 8px 15px;
+
+  font-size: 1em;
+  font-weight: 500;
+}
+
+/* Teléfonos */
+@media (max-width: 767px) {
+  .card-detail {
+    width: 300px;
+    height: 500px;
+  }
+
+  .card-detail__image {
+    height: 260px;
+  }
+
+  .card-detail__image img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .card-detail__status {
+    width: 70px;
+    padding: 0.15em 0.05em;
+  }
+
+  .status {
+    font-size: 0.8em;
+    font-weight: 700;
+  }
+
+  .card-detail__name {
+    font-size: 2.1em;
+    margin-bottom: 15px;
+  }
+
+  .card-detail__content p {
+    font-size: 0.95em;
+  }
+}
