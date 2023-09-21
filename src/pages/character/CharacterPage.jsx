@@ -3,6 +3,7 @@ import { useCounter } from "../../hooks/useCounter";
 import { CharacterList, NavePage } from "../../components";
 
 import "../../assets/css/character/Character.css";
+import { PageLoading } from "../loading/PageLoading";
 
 export const CharacterPage = () => {
   const [characters, setCharacters] = useState([]);
@@ -27,7 +28,7 @@ export const CharacterPage = () => {
       <h1 className="title">Rick and Morty Characters</h1>
 
       {loading ? (
-        <h1>Loading...</h1>
+        <PageLoading />
       ) : (
         <>
           <NavePage counter={counter} increment={increment} reduce={reduce} />
