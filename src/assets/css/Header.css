@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  height: 120px;
+  background-color: #272b33;
+}
+
+.header .logo {
+  width: 150px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+.header__nav-item {
+  list-style: none;
+  color: #fff;
+}
+
+.header__nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.header__nav-link:hover {
+  color: #ff9800;
+}
