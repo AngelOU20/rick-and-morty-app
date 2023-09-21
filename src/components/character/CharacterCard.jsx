@@ -1,10 +1,11 @@
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export const CharacterCard = ({
+  id,
   image,
   name,
-  origin,
   status,
   species,
   location,
@@ -27,10 +28,11 @@ export const CharacterCard = ({
     <div className="card">
       <div className="card-image">
         <img className="character-image" src={image} alt={name} />
-        <span className="character-origin">{origin.name}</span>
       </div>
       <div className="card-content">
-        <h2 className="card-title">{name}</h2>
+        <Link to={`/character/${id}`} className="character-link">
+          <h2 className="card-title">{name}</h2>
+        </Link>
         <div className="card-description">
           <div className="character-status-species">
             <svg
@@ -74,6 +76,7 @@ export const CharacterCard = ({
 };
 
 CharacterCard.propTypes = {
+  id: PropTypes.number,
   image: PropTypes.string,
   name: PropTypes.string,
   origin: PropTypes.shape({
