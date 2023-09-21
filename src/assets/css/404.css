@@ -1,0 +1,39 @@
+.content-error-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.error-image {
+  width: 100%;
+  max-width: 30rem;
+
+  cursor: pointer;
+
+  will-change: filter;
+  transition: filter 1500ms;
+}
+
+.title-error {
+  font-size: 4.5em;
+  font-weight: 800;
+
+  letter-spacing: 0.02em;
+}
+
+.error-image:hover {
+  filter: drop-shadow(0 0 2em #64ff64aa);
+}
+
+.notfound-text {
+  font-size: #fff;
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.notfound-link {
+  color: #fff;
+}
