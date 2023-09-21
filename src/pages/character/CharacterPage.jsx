@@ -24,6 +24,8 @@ export const CharacterPage = () => {
 
   return (
     <>
+      <h1 className="title">Rick and Morty Characters</h1>
+
       {loading ? (
         <h1>Loading...</h1>
       ) : (
