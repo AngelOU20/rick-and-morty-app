@@ -1,8 +1,6 @@
 import { Route, Routes } from "react-router-dom";
-import { CharacterPage } from "../pages/character/CharacterPage";
-import { CharacterDetailPage } from "../pages/character/CharacterDetailPage";
-import { Page404 } from "../pages/page404/Page404";
-import { Header } from "../components/header/Header";
+import { CharacterPage, CharacterDetailPage, Page404 } from "../pages";
+import { Header } from "../components/";
 
 export const AppRouter = () => {
   return (
@@ -10,7 +8,7 @@ export const AppRouter = () => {
       <Header />
 
       <Routes>
-        <Route path="/" element={<CharacterPage />} />
+        <Route path="/characters" element={<CharacterPage />} />
         <Route path="/character/:id" element={<CharacterDetailPage />} />
 
         <Route path="*" element={<Page404 />} />
