@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { useCounter } from "../../hooks/useCounter";
-import { CharacterList, NavePage } from "../../components";
+import { CharacterList, PaginationNav } from "../../components";
+import { PageLoading } from "../";
 
 import "../../assets/css/character/Character.css";
-import { PageLoading } from "../loading/PageLoading";
 
 export const CharacterPage = () => {
   const [characters, setCharacters] = useState([]);
@@ -31,9 +31,17 @@ export const CharacterPage = () => {
         <PageLoading />
       ) : (
         <>
-          <NavePage counter={counter} increment={increment} reduce={reduce} />
+          <PaginationNav
+            counter={counter}
+            increment={increment}
+            reduce={reduce}
+          />
           <CharacterList characters={characters} />
-          <NavePage counter={counter} increment={increment} reduce={reduce} />
+          <PaginationNav
+            counter={counter}
+            increment={increment}
+            reduce={reduce}
+          />
         </>
       )}
     </>
