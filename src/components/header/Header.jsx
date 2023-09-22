@@ -5,7 +5,7 @@ import "../../assets/css/Header.css";
 export const Header = () => {
   return (
     <header className="header">
-      <Link to="/" className="header__logo">
+      <Link to="/characters" className="header__logo">
         <img
           src={logoRickAndMorty}
           className="header__logo-image logo"
@@ -16,7 +16,7 @@ export const Header = () => {
       <nav className="header__nav">
         <ul className="header__nav-list">
           <li className="header__nav-item">
-            <Link to="/" className="header__nav-link">
+            <Link to="/characters?page=" className="header__nav-link">
               Characters
             </Link>
           </li>
