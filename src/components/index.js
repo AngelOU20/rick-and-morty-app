@@ -1,2 +1,3 @@
 export * from "./character";
-export * from "./NavePage";
+export * from "./header";
+export * from "./pagination";
